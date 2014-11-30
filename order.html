@@ -4,13 +4,69 @@
     <meta charset="UTF-8">
     <title>Order</title>
     <link href="/packages/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/packages/angular/angular-csp.css">
-    <link href="/css/style.css">
+    <link href="/packages/angular/angular-csp.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body ng-app="myApp">
+<div class="container">
+    <div class="class-xs-12">
+        <br/>
+        <h2>Order</h2><br/>
+        <div class="row">
+            <div class="class-xs-12">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#">Bread</a></li>
+                    <li><a href="#">Sandwich type</a></li>
+                    <li><a href="#">Toppings</a></li>
+                    <li><a href="#">Sauces</a></li>
+                    <li><a href="#">Side Orders</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="class-xs-12 option-container">
+                <div class="row">
+                    <div class="col-xs-4 col-md-2">
+                        <a class="thumbnail" href="#">
+                            <img data-src="holder.js/100%x120/text:choose bread">
+                        </a>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <a class="thumbnail" href="#">
+                            <img data-src="holder.js/100%x120/text:choose bread">
+                        </a>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <a class="thumbnail" href="#">
+                            <img data-src="holder.js/100%x120/text:choose bread">
+                        </a>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <a class="thumbnail" href="#">
+                            <img data-src="holder.js/100%x120/text:choose bread">
+                        </a>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <a class="thumbnail" href="#">
+                            <img data-src="holder.js/100%x120/text:choose bread">
+                        </a>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <a class="thumbnail" href="#">
+                            <img data-src="holder.js/100%x120/text:choose bread">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="/packages/bootstrap/dist/bootstrap.min.js"></script>
+<script src="/packages/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.4.1/holder.js"></script>
 <script src="/packages/angular/angular.min.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/controllers.js"></script>
 </body>
 </html>
