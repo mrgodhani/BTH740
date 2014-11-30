@@ -17,8 +17,8 @@
                     <ul class="nav nav-tabs nav-justified">
                         <li class="active"><a href="#bread" role="tab" data-toggle="tab">Bread</a></li>
                         <li><a href="#sandwiches" role="tab" data-toggle="tab">Sandwich type</a></li>
-                        <li><a href="#">Toppings</a></li>
-                        <li><a href="#">Sauces</a></li>
+                        <li><a href="#toppings" role="tab" data-toggle="tab">Toppings</a></li>
+                        <li><a href="#sauces" role="tab" data-toggle="tab">Sauces</a></li>
                         <li><a href="#">Side Orders</a></li>
                     </ul>
                 </div>
@@ -45,6 +45,30 @@
                                         <img ng-src="{{ sandwich.image }}" alt="{{ sandwich.name }}">
                                         <div class="caption">
                                             <p class="text-center"><strong>{{ sandwich.name }}</strong></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="toppings">
+                            <div class="row">
+                                <div  ng-cloak class="col-xs-4 col-md-2" ng-repeat="top in toppings">
+                                    <a class="thumbnail" href="#">
+                                        <img ng-src="{{ top.image }}" alt="{{ top.name }}">
+                                        <div class="caption">
+                                            <p class="text-center"><strong>{{ top.name }}</strong></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="sauces">
+                            <div class="row">
+                                <div  ng-cloak class="col-xs-4 col-md-2" ng-repeat="sauce in sauces">
+                                    <a class="thumbnail" href="#">
+                                        <img ng-src="{{ sauce.image }}" alt="{{ sauce.name }}">
+                                        <div class="caption">
+                                            <p class="text-center"><strong>{{ sauce.name }}</strong></p>
                                         </div>
                                     </a>
                                 </div>
