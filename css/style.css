@@ -5,3 +5,22 @@
     border-right:1px solid #ddd;
     padding:20px;
 }
+
+.selected a
+{
+	border:3px solid green;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active 
+{
+border-color: green !important;
+}
+
+.order-summary
+{
+	padding: 15px;
+border: 1px solid #ddd;
+margin-bottom: 30px;
+}
