@@ -8,43 +8,59 @@
     <link href="/css/style.css" rel="stylesheet">
 </head>
 <body ng-app="myApp">
-<div class="container" ng-controller="OrderController">
-    <div class="class-xs-12">
-        <br/>
-        <h2>Order</h2><br/>
-        <div class="row">
-            <div class="class-xs-12">
-                <ul class="nav nav-tabs nav-justified">
-                    <li class="active"><a href="#">Bread</a></li>
-                    <li><a href="#">Sandwich type</a></li>
-                    <li><a href="#">Toppings</a></li>
-                    <li><a href="#">Sauces</a></li>
-                    <li><a href="#">Side Orders</a></li>
-                </ul>
+    <div class="container" ng-controller="OrderController">
+        <div class="class-xs-12">
+            <br/>
+            <h2>Order</h2><br/>
+            <div class="row">
+                <div class="class-xs-12">
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="active"><a href="#bread" role="tab" data-toggle="tab">Bread</a></li>
+                        <li><a href="#sandwiches" role="tab" data-toggle="tab">Sandwich type</a></li>
+                        <li><a href="#">Toppings</a></li>
+                        <li><a href="#">Sauces</a></li>
+                        <li><a href="#">Side Orders</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="class-xs-12 option-container">
-                <div class="row">
-                    <div class="col-xs-4 col-md-2" ng-repeat="bread in breadtypes">
-                        <a class="thumbnail" href="#">
-                            <img ng-src="{{ bread.image }}" alt="{{ bread.name }}">
-                            <div class="caption">
-                                <p class="text-center">{{ bread.name }}</p>
+            <div class="row">
+                <div class="class-xs-12 option-container">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="bread">
+                            <div class="row">
+                                <div  ng-cloak class="col-xs-4 col-md-2" ng-repeat="bread in breadtypes">
+                                    <a class="thumbnail" href="#">
+                                        <img class="img-responsive" ng-src="{{ bread.image }}" alt="{{ bread.name }}">
+                                        <div class="caption">
+                                            <p class="text-center"><strong>{{ bread.name }}</strong></p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
+                        </div>
+                        <div class="tab-pane" id="sandwiches">
+                            <div class="row">
+                                <div  ng-cloak class="col-xs-4 col-md-2" ng-repeat="sandwich in sandwichtypes">
+                                    <a class="thumbnail" href="#">
+                                        <img ng-src="{{ sandwich.image }}" alt="{{ sandwich.name }}">
+                                        <div class="caption">
+                                            <p class="text-center"><strong>{{ sandwich.name }}</strong></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="/packages/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.4.1/holder.js"></script>
-<script src="/packages/angular/angular.min.js"></script>
-<script src="/js/app.js"></script>
-<script src="/js/controllers.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/packages/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.4.1/holder.js"></script>
+    <script src="/packages/angular/angular.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers.js"></script>
 </body>
 </html>
