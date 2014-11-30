@@ -55,4 +55,14 @@ controller('OrderController',
         {name:'Sweet Onion', image: 'https://order.subway.com/Images/Subway/en-us/Options/o_SweetOnionNo.png'},
         {name:'Ranch', image: 'https://order.subway.com/Images/Subway/en-us/Options/o_RanchNo.png'},
         ];
+
+        $scope.sides =
+        [
+        {name:'Coca-Cola classic', image: 'https://order.subway.com/Images/Subway/en-us/Options/p_CocaColaNo.png'},
+        {name:'Diet Coke', image: 'https://order.subway.com/Images/Subway/en-us/Options/p_DietCokeNo.png'},
+        {name:'Sprite', image: 'https://order.subway.com/Images/Subway/en-us/Options/p_SpriteNo.png'},
+        {name:'Dasani Water', image: 'https://order.subway.com/Images/Subway/en-us/Options/20007No.png'},
+        {name:'Chips', image: 'https://order.subway.com/Images/Subway/en-us/Options/32052No.png'},
+        {name:'Cookies', image: 'https://order.subway.com/Images/Subway/en-us/Options/o_ChocoChipNo.png'}
+        ];
     });

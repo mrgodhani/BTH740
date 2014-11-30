@@ -19,7 +19,7 @@
                         <li><a href="#sandwiches" role="tab" data-toggle="tab">Sandwich type</a></li>
                         <li><a href="#toppings" role="tab" data-toggle="tab">Toppings</a></li>
                         <li><a href="#sauces" role="tab" data-toggle="tab">Sauces</a></li>
-                        <li><a href="#">Side Orders</a></li>
+                        <li><a href="#sides" role="tab" data-toggle="tab">Side Orders</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,6 +69,18 @@
                                         <img ng-src="{{ sauce.image }}" alt="{{ sauce.name }}">
                                         <div class="caption">
                                             <p class="text-center"><strong>{{ sauce.name }}</strong></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="sides">
+                            <div class="row">
+                                <div  ng-cloak class="col-xs-4 col-md-2" ng-repeat="side in sides">
+                                    <a class="thumbnail" href="#">
+                                        <img ng-src="{{ side.image }}" alt="{{ side.name }}">
+                                        <div class="caption">
+                                            <p class="text-center"><strong>{{ side.name }}</strong></p>
                                         </div>
                                     </a>
                                 </div>
