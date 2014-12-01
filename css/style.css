@@ -58,6 +58,7 @@ a.disabled
 	pointer-events:none;
 	opacity:0.5;
 	border:1px solid #ddd;
+	cursor:default;
 }
 
 #checkout-fixedbutton {

@@ -71,14 +71,4 @@ controller('OrderController',
         {name:'Chips', image: 'https://order.subway.com/Images/Subway/en-us/Options/32052No.png'},
         {name:'Cookies', image: 'https://order.subway.com/Images/Subway/en-us/Options/o_ChocoChipNo.png'}
         ];
-
-
-        $scope.ordersummary =
-        {
-            sandwich : ($scope.selectedsandwich.length > 0) ? $scope.selectedsandwich[0].name : '',
-            bread : ($scope.selectedbread.length > 0) ?  $scope.selectedbread[0].name : '',
-            toppings: $scope.selectedtoppings,
-            sauce: $scope.selectedsandwich,
-            sides: $scope.selectedsides
-        };
     });

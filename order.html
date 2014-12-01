@@ -65,7 +65,7 @@
                         <div class="tab-pane" id="sauces">
                             <div class="row">
                                 <div  ng-cloak  selection-model selection-model-type="basic" selection-model-mode="multiple-additive" selection-model-selected-items="selectedsauce" selection-model-selected-class="selected" class="col-xs-4 col-md-2" ng-repeat="sauce in sauces">
-                                    <a class="thumbnail" href ng-class="{ 'disabled' : selectedsauce.length > 2  &&  !selectedsauce[$index].selected}">
+                                    <a class="thumbnail" href>
                                         <img ng-src="{{ sauce.image }}" alt="{{ sauce.name }}">
                                         <div class="caption">
                                             <p class="text-center"><strong>{{ sauce.name }}</strong></p>
@@ -76,7 +76,7 @@
                         </div>
                         <div class="tab-pane" id="sides">
                             <div class="row">
-                                <div  ng-cloak class="col-xs-4 col-md-2" ng-repeat="side in sides">
+                                <div  ng-cloak selection-model selection-model-type="basic" selection-model-mode="multiple-additive" selection-model-selected-items="selectedsides" selection-model-selected-class="selected" ng-cloak class="col-xs-4 col-md-2" ng-repeat="side in sides">
                                     <a class="thumbnail" href>
                                         <img ng-src="{{ side.image }}" alt="{{ side.name }}">
                                         <div class="caption">
@@ -121,6 +121,12 @@
                                     <h4>Sauces : </h4>
                                     <ul>
                                         <li ng-repeat="topping in selectedsauce"><p class="text-muted">{{ topping.name }}</p></li>
+                                    </ul>
+                                </li>
+                                <li ng-if="selectedsides.length > 0">
+                                    <h4>Side Orders : </h4>
+                                    <ul>
+                                        <li ng-repeat="topping in selectedsides"><p class="text-muted">{{ topping.name }}</p></li>
                                     </ul>
                                 </li>
                             </ul>
