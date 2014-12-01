@@ -8,7 +8,7 @@
 
 .selected a
 {
-	border:3px solid green;
+	border:1px solid green;
 }
 
 a.thumbnail:hover,
@@ -21,7 +21,7 @@ border-color: green !important;
 .order-summary
 {
 	padding: 15px;
-border: 1px solid #ddd;
+border: 1px dotted #000;
 margin-bottom: 30px;
 }
 
@@ -54,6 +54,13 @@ margin-bottom: 30px;
 	display: inline-block; 
 	width: 33%; 
 
+}
+
+a.disabled
+{
+	pointer-events:none;
+	opacity:0.5;
+	border:1px solid #ddd;
 }
 
 #checkout-fixedbutton {
