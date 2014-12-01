@@ -71,4 +71,10 @@ controller('OrderController',
         {name:'Chips', image: 'https://order.subway.com/Images/Subway/en-us/Options/32052No.png'},
         {name:'Cookies', image: 'https://order.subway.com/Images/Subway/en-us/Options/o_ChocoChipNo.png'}
         ];
+    })
+.controller('CheckoutController',
+    function($scope,ordersummary)
+    {
+        $scope.summary = ordersummary;
+        console.log($scope.summary);
     });
