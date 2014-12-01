@@ -12,9 +12,9 @@
         <div class="class-xs-12">
             <br/>
             <h2>Checkout</h2><br/>
-            <div>
+            <div class="checkout-container">
                 <div class="checkout-column-left"> 
-                    <h3> My Order c</h3>
+                    <h3> My Order </h3>
                 </div>
                 <div class="checkout-column-center"> 
                     <h3> Delivery </h3>
@@ -46,7 +46,24 @@
                 </div>
                 <div class="checkout-column-right"> 
                     <h3> Payment </h3>
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Credit Card</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="905-123-4567">
+                        </div>                
+                    </form>
+                    <br />
+                    <br />
+                    Or
+                    <br />
+                    <br />
+                    <button type="button" class="btn btn-default">PayPal</button>
                 </div>
+                <button type="button" class="btn btn-default" id="checkout-fixedbutton">Place Order</button>
             </div>
         </div>
     </div>
