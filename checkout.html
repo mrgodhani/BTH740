@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Order</title>
+    <title>Checkout</title>
     <link href="/packages/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/packages/angular/angular-csp.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
@@ -15,6 +15,34 @@
             <div class="checkout-container">
                 <div class="checkout-column-left"> 
                     <h3> My Order </h3>
+                    <div class="col-xs-5 order-summaryy">
+                        <div class="col-xs-12">
+                            <p ng-cloak class="text-center" ng-if="selectedsandwich.length === 0"> Order summary not available </p>
+                            <ul  ng-cloak ng-if="selectedsandwich.length > 0">
+                                <li ng-if="selectedsandwich.length > 0">
+                                    <h4>Sandwich :</h4>
+                                    <p class="text-muted">{{ selectedsandwich[0].name }}</p>
+                                </li>
+                                <li ng-if="selectedbread.length > 0">
+                                    <h4>Bread :</h4>
+                                    <p class="text-muted">{{ selectedbread[0].name }}</p>
+                                </li>
+                                <li ng-if="selectedtoppings.length > 0">
+                                    <h4>Toppings : </h4>
+                                    <ul>
+                                        <li ng-repeat="topping in selectedtoppings"><p class="text-muted">{{ topping.name }}</p></li>
+                                    </ul>
+                                </li>
+                                <li ng-if="selectedsauce.length > 0">
+                                    <h4>Sauces : </h4>
+                                    <ul>
+                                        <li ng-repeat="topping in selectedsauce"><p class="text-muted">{{ topping.name }}</p></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p><a class="btn btn-primary pull-right" href>Checkout</a></p>
+                        </div>
+                    </div>                    
                 </div>
                 <div class="checkout-column-center"> 
                     <h3> Delivery </h3>
