@@ -27,9 +27,7 @@ margin-bottom: 30px;
 
 .checkout-container
 {
-    background-color: red;
-
-    position: absolute;
+    position: relative;
     top:0;
     bottom: 0;
     left: 0;
@@ -60,4 +58,10 @@ a.disabled
 	pointer-events:none;
 	opacity:0.5;
 	border:1px solid #ddd;
+}
+
+#checkout-fixedbutton {
+    position: absolute;
+    bottom: 0px;
+    right: 0px; 
 }
